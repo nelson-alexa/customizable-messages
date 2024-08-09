@@ -1,0 +1,9 @@
+//Author: Alexa Nelson
+
+[
+  {
+    "greeting": "Good {time_of_day} {name},",
+    "message": "Welcome to {company}! Room {roomNumber} is now ready for you. Enjoy your stay, 
+                and let us know if you need anything."
+  }
+]
