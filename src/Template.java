@@ -10,11 +10,17 @@ public class Template {
         this.message = message;
     }
 
-    public String getGreeting(){
+    public String getGreeting() {
         return greeting;
     }
 
-    public String getMessage(){
+    public String getMessage() {
         return message;
+    }
+
+    public String createMessage(String name, String company, String roomNumber, String timeOfDay) {
+        String newGreeting = greeting.replace("{time_of_day}", timeOfDay).replace("{name}", name);
+        String newMessage = message.replace("{company}", company).replace("{roomNumber}", roomNumber);
+        return newGreeting + " " + newMessage;
     }
 }
