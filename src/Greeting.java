@@ -10,7 +10,7 @@ public class Greeting{
         this.greeting = "";     //Set greeting to empty string prior to being determined
     }
 
-    public String determineGreeting(){
+    public void determineGreeting(){
         LocalTime time = LocalTime.now();
 
         if (time.isBefore(LocalTime.NOON)) {

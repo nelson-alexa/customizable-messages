@@ -11,10 +11,10 @@ public class Template {
     }
 
     public String getGreeting(){
-        return this.greeting;
+        return greeting;
     }
 
     public String getMessage(){
-        return this.message;
+        return message;
     }
 }
