@@ -1,5 +1,4 @@
 //Author: Alexa Nelson
-
 import java.time.LocalTime;
 
 public class GreetingGenerator{

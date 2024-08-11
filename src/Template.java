@@ -18,9 +18,9 @@ public class Template {
         return message;
     }
 
-    public String createMessage(String name, String company, String roomNumber, String timeOfDay) {
+    public String createMessage(String name, String company, int roomNumber, String timeOfDay) {
         String newGreeting = greeting.replace("{time_of_day}", timeOfDay).replace("{name}", name);
-        String newMessage = message.replace("{company}", company).replace("{roomNumber}", roomNumber);
+        String newMessage = message.replace("{company}", company).replace("{roomNumber}", String.valueOf(roomNumber));
         return newGreeting + " " + newMessage;
     }
 }
