@@ -5,7 +5,7 @@ public class GreetingGenerator{
 
     public static String getGreeting() {
         LocalTime time = LocalTime.now();
-
+        
         if (time.isBefore(LocalTime.NOON)) {
             return "morning";
         }
