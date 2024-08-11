@@ -35,8 +35,10 @@ For integration testing, I compiled and ran the program using Main.java. I did m
 
 Using Template:
 
-![Integration1](image-3.png)
-![Integration2](image-4.png)
+Test 1:
+    ![Integration1](image-3.png)
+Test 2:
+    ![Integration2](image-4.png)
 
 Creating Template:
 
