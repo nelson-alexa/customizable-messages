@@ -28,7 +28,7 @@ To verify the correctness of this program I used both unit testing and integrati
 For unit testing, the tests that I wrote can be seen in the "tests" folder included in the project. In the unit testing, I not only tested the classes methods and attributes, but I accounted for edge cases. The class that had many edge cases to account for is the GreetingGenerator. In the TestGreetingGenerator.java file, I tested the GreetingGenerator class with 9 tests in attempt to test the method getGreeting() for regular times as well as the edge cases where the greeting changes. In order, to test that method I had to make temporary changes to the method since it uses the LocalTime.now() for the program, but I wanted to be able to test different times. Below is a screenshot of all the tests passing including the TestGreetingGenerator tests.
 
 <br></br>
-![Passing Tests](image-2.png)
+![Passing Tests](PassingTests.png)
 <br></br>
 
 For integration testing, I compiled and ran the program using Main.java. I did multiple tests to ensure that it was parsing the JSON files and the program was running as expected. These tests included using the template and selecting different guests as well as different companies and ensuring the final message was correct. I also tested the functionality of the user being able to create their own message by selecting that option and entering different greetings and messages. I tested the greeting and message with including all of the placeholders and with only including some or none of the placeholders. Below is screenshots of the integration testing.
@@ -36,14 +36,14 @@ For integration testing, I compiled and ran the program using Main.java. I did m
 Using Template:
 
 Test 1:
-    ![Integration1](image-3.png)
+    ![Integration1](Integration1.png)
 Test 2:
-    ![Integration2](image-4.png)
+    ![Integration2](Integration2.png)
 
 Creating Template:
 
-![Integration3](image-5.png)
-![Integration3Output](image-6.png)
+![Integration3](Integration3.png)
+![Integration3Output](Integration3Output.png)
 
 <Strong> What Wasn't Completed, or What Would I Do with More Time? </Strong> <br>
 
