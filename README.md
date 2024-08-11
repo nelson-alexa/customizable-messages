@@ -2,10 +2,12 @@
 <Strong> Interview Project </Strong> <br>
 <Strong> August 11th, 2024 </Strong> <br>
 
+
 <Strong> How to Run: </Strong> <br>
 <li> 1. Compile - "javac Main.java" </li>
 <li> 2. Run - "java Main" </li>
 <li> 3. Follow prompts on the screen for entering numbers or creating new template </li> <br>
+
 
 <Strong> Overview: </Strong> <br>
 
@@ -17,9 +19,11 @@ The Main class is dedicated to running the project and is designed in a logical 
 
 By making these design decsions throughout the creation of the project, it would be easy to not only add more templates to Template.json that could be selected from but also more guests and companies can be added to the corresponding JSON files or even display other information to the guests. 
 
+
 <Strong> Programming Language: </Strong> <br>
 
 I used Java as the programming language for this project since Java is a object-oriented programming language as well as I have good knowledge in both program design and testing in Java.
+
 
 <Strong> Verifying Correctness of the Program: </Strong> <br>
 
@@ -42,8 +46,13 @@ Test 2:
 
 Creating Template:
 
-![Integration3](Integration3.png)
-![Integration3Output](Integration3Output.png)
+Test 1: (Using {name} and {company})
+    ![Integration3](Integration3.png)
+    ![Integration3Output](Integration3Output.png)
+Test 2: (Using {name}, {company}, and {roomNumber})
+    ![Integration4](Integration4.png)
+    ![Integration4Output](Integration4Output.png)
+
 
 <Strong> What Wasn't Completed, or What Would I Do with More Time? </Strong> <br>
 
