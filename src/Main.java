@@ -20,10 +20,10 @@ public class Main{
                 //Load the template
                 selectedTemplate = TemplateLoader.loadTemplate("src/Template.json");
             } else {
-                // User enters a new template
-                System.out.println("Enter the greeting (include {name}):");
+                //User enters a new template
+                System.out.println("Enter the greeting (Can include {name} and {time_of_day}):");
                 String greeting = scanner.nextLine();
-                System.out.println("Enter the message (include {company} and {roomNumber}):");
+                System.out.println("Enter the message (Can include {company} and {roomNumber}):");
                 String message = scanner.nextLine();
                 selectedTemplate = new Template(greeting, message);
             }
@@ -33,14 +33,14 @@ public class Main{
             List<Company> companies = CompanyLoader.loadCompanies("src/Companies.json");
 
             //Select Guest and Company
-            System.out.println("Select a guest: ");
+            System.out.println("Select a Guest: ");
             for (int i = 0; i < guests.size(); i++) {
                 System.out.println((i+1) + ". " + guests.get(i).getName());
             }
             int guestIndex = scanner.nextInt() - 1;
             Guest selectedGuest = guests.get(guestIndex);
 
-            System.out.println("Select a company:");
+            System.out.println("Select a Company:");
             for (int i = 0; i < companies.size(); i++) {
                 System.out.println((i + 1) + ". " + companies.get(i).getName());
             }
@@ -49,14 +49,16 @@ public class Main{
 
             String timeOfDay = GreetingGenerator.getGreeting();
 
-            // Generate the final message
+            //Generate the final message
             String finalMessage = selectedTemplate.createMessage(
                     selectedGuest.getName(),
                     selectedCompany.getName(),
                     selectedGuest.getRoomNumber(),
                     timeOfDay
             );
+            System.out.println("\n");
             System.out.println(finalMessage);
+            System.out.println("\n");
 
         } catch (IOException | ParseException e) {
             e.printStackTrace();
