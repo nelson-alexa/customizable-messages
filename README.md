@@ -26,6 +26,7 @@ I used Java as the programming language for this project since Java is a object-
 To verify the correctness of this program I used both unit testing and integration testing. 
 
 For unit testing, the tests that I wrote can be seen in the "tests" folder included in the project. In the unit testing, I not only tested the classes methods and attributes, but I accounted for edge cases. The class that had many edge cases to account for is the GreetingGenerator. In the TestGreetingGenerator.java file, I tested the GreetingGenerator class with 9 tests in attempt to test the method getGreeting() for regular times as well as the edge cases where the greeting changes. In order, to test that method I had to make temporary changes to the method since it uses the LocalTime.now() for the program, but I wanted to be able to test different times. Below is a screenshot of the TestGreetingGenerator tests passing.
+<br>
 ![alt text](image-2.png)
 
 
