@@ -48,7 +48,8 @@ Creating Template:
 
 Test 1: (Using {name} and {company})
     ![Integration3](Integration3.png)
-    ![Integration3Output](Integration3Output.png)
+    ![Integration3Output](Integration3Output.png) 
+
 Test 2: (Using {name}, {company}, and {roomNumber})
     ![Integration4](Integration4.png)
     ![Integration4Output](Integration4Output.png)
