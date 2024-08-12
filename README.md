@@ -11,13 +11,13 @@
 
 <Strong> Overview: </Strong> <br>
 
-I used object-oriented programming as the basis of the design for this program. My design decisions were all made in attempt to adhere to the SOLID principles of software design. I focused on the Single Responsibility principle and the Open/Closed principle. I used both of those principles to determine what classes were needed for the program and for the design of each of them. Each class has its own responsibility so it can easily be maintained and understood by other developers, and I used the Open/Closed principle to ensure there was room for possible expansion in the future. 
+I used object-oriented programming as the basis of the design for this program. My design decisions were all made in adherence to the SOLID principles of software design. I focused on the Single Responsibility principle and the Open/Closed principle. I used both of those principles to determine what classes were needed for the program and for the design of each of them. Each class has its own responsibility so it can easily be maintained and understood by other developers, and I used the Open/Closed principle to ensure there was room for possible expansion in the future. 
 
 The design decision that was made for the template was to split the output message into two parts which includes the greeting and the message and insert the needed placeholders. This decision also makes it easy for the user to enter a new message rather than using the template. I designed it so the user could enter placeholders in their message that would be appropriately filled with guest / company selection or they could choose to not include some or all of the placeholders, leaving it very customizable for the user. 
 
 The Main class is dedicated to running the project and is designed in a logical way for the program to gather the needed information. It has simple prompts to help guide the user in making the correct selection, and outputs the final message. 
 
-By making these design decsions throughout the creation of the project, it would be easy to not only add more templates to Template.json that could be selected from but also more guests and companies can be added to the corresponding JSON files or even display other information to the guests. 
+By making these design decisions throughout the creation of the project, it would be easy to not only add more templates to Template.json that could be selected from but also more guests and companies can be added to the corresponding JSON files or even display other information to the guests. 
 
 
 <Strong> Programming Language: </Strong> <br>
@@ -29,7 +29,7 @@ I used Java as the programming language for this project since Java is a object-
 
 To verify the correctness of this program I used both unit testing and integration testing. 
 
-For unit testing, the tests that I wrote can be seen in the "tests" folder included in the project. In the unit testing, I not only tested the classes methods and attributes, but I accounted for edge cases. The class that had many edge cases to account for is the GreetingGenerator. In the TestGreetingGenerator.java file, I tested the GreetingGenerator class with 9 tests in attempt to test the method getGreeting() for times between the edge cases as well as the edge cases where the greeting would change. In order, to test that method I had to make temporary changes to the method since it uses the LocalTime.now() for the program, but I wanted to be able to test different times. Below is a screenshot of all the tests passing including the TestGreetingGenerator tests (See PassingTests.png).
+For unit testing, the tests that I wrote can be seen in the "tests" folder included in the project. In the unit testing, I not only tested the classes methods and attributes, but I accounted for edge cases. The GreetingGenerator class had many edge cases to account for. In the TestGreetingGenerator.java file, I tested the GreetingGenerator class with 9 tests in order to fully test the class including the edge cases. In order to test the GreetingGenerator class, I had to make temporary changes to the getGreeting() method since it uses the LocalTime.now() for the program, so it wouldn't be possible to test given times. The tests wouldn't pass without the temporary change I had made, but the tests ensured it would work at all times of the day with the LocalTime.now() function as it is now. Below is a screenshot of all the tests passing including the TestGreetingGenerator tests (See PassingTests.png).
 
 <br></br>
 ![Passing Tests](PassingTests.png)
@@ -48,9 +48,9 @@ Creating Template:
 
 Test 1: (Using {name} and {company})
     ![Integration3](Integration3.png)
-    ![Integration3Output](Integration3Output.png) 
+    ![Integration3Output](Integration3Output.png)
 
-Test 2: (Using {name}, {company}, and {roomNumber})
+Test 2: (Using {name}, {time_of_day}, {company}, and {roomNumber})
     ![Integration4](Integration4.png)
     ![Integration4Output](Integration4Output.png)
 
