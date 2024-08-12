@@ -24,8 +24,9 @@ public class Main{
                 System.out.println("----------------------------------------------------------");
                 System.out.println("Please write the new template for the message being sent.");
                 System.out.println("The greeting can include the variable placeholders {name} and {time_of_day}");
-                System.out.println("The message can include the variable placeholders {company} and {time_of_day}");
-                System.out.println("Example: Good {time_of_day} {name}! Welcome to {company}! Room {roomNumber} is now ready!");
+                System.out.println("Example: Good {time_of_day} {name}!");
+                System.out.println("The message can include the variable placeholders {company} and {roomNumber}");
+                System.out.println("Example: Welcome to {company}! Room {roomNumber} is now ready!");
                 System.out.println("----------------------------------------------------------");
 
                 System.out.println("Enter the greeting:");
