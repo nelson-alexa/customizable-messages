@@ -49,7 +49,6 @@ Creating Template:
 Test 1: (Using {name} and {company})
 <br></br>
     ![Integration3](Integration3.png)
-<br></br>
     ![Integration3Output](Integration3Output.png)
 
 Test 2: (Using {name}, {time_of_day}, {company}, and {roomNumber})
